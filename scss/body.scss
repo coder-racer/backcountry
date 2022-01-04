@@ -43,13 +43,7 @@
       gap: 30px;
       width: 60%;
       h1{
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 36px;
-        color: #42445A;
-        line-height: 44px;
-        text-transform: uppercase;
+        text-align: start;
       }
       p{
         font-family: 'Montserrat', sans-serif;
@@ -68,4 +62,17 @@
       }
     }
   }
+}
+.title{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #42445A;
 }

@@ -1,20 +1,21 @@
 /*
 Error: Undefined variable: "$pussy-girl".
-        on line 67 of body.scss
+        on line 61 of body.scss
 
-62:         font-family: 'Montserrat', sans-serif;
-63:         font-style: normal;
-64:         font-weight: 600;
-65:         font-size: 18px;
-66:         line-height: 22px;
-67:         color: $pussy-girl;
-68:       }
-69:     }
-70:   }
-71: }
+56:         font-family: 'Montserrat', sans-serif;
+57:         font-style: normal;
+58:         font-weight: 600;
+59:         font-size: 18px;
+60:         line-height: 22px;
+61:         color: $pussy-girl;
+62:       }
+63:     }
+64:   }
+65: }
+66: .title{
 
 Backtrace:
-body.scss:67
+body.scss:61
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -100,4 +101,4 @@ C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$pussy-girl\".\A         on line 67 of body.scss\A \A 62:         font-family: 'Montserrat', sans-serif;\A 63:         font-style: normal;\A 64:         font-weight: 600;\A 65:         font-size: 18px;\A 66:         line-height: 22px;\A 67:         color: $pussy-girl;\A 68:       }\A 69:     }\A 70:   }\A 71: }"; }
+  content: "Error: Undefined variable: \"$pussy-girl\".\A         on line 61 of body.scss\A \A 56:         font-family: 'Montserrat', sans-serif;\A 57:         font-style: normal;\A 58:         font-weight: 600;\A 59:         font-size: 18px;\A 60:         line-height: 22px;\A 61:         color: $pussy-girl;\A 62:       }\A 63:     }\A 64:   }\A 65: }\A 66: .title{"; }
