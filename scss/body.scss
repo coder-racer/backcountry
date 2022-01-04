@@ -1,0 +1,25 @@
+.idea{
+  margin-top: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  .idea-item{
+    text-align: center;
+    max-width: 15%;
+    .image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1em;
+      width: 100%;
+      height: 100px;
+    }
+  }
+}
+.bg-2{
+  background-image: url("../img/bg2.png");
+  display: block;
+  width: 100%;
+  background-position: center;
+  
+}

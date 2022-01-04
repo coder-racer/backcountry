@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  flex-direction: column;
+  .header-up {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 30px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .call{
+      display: flex;
+      gap: 2em;
+    }
+    .search{
+      opacity: 0.6;
+      background: rgb(255, 255, 255);
+      padding: 10px;
+      border-radius: 50%;
+    }
+  }
+  .main-menu{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+      color: white;
+    }
+  }
+}
