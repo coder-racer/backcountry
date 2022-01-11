@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAU;EACR,UAAU,EAAE,IAAI",
+"sources": ["../scss/feedback.scss"],
+"names": [],
+"file": "feedback.min.css"
+}

@@ -1,49 +1,74 @@
-window._ = new Glider(document.querySelector('.glider'), {
-    slidesToShow: 1, //'auto',
-    slidesToScroll: 1,
-    itemWidth: 268,
-    draggable: true,
-    scrollLock: false,
-    rewind: true,
-    arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next'
-    },
-    responsive: [
-        {
-            breakpoint: 800,
-            settings: {
-                slidesToScroll: 'auto',
-                itemWidth: 300,
-                slidesToShow: 'auto',
-                exactWidth: true
+$(document).ready(function () {
+
+    $('.regular').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '.btn_custom_prev',
+        nextArrow: '.btn_custom_next',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        },
-        {
-            breakpoint: 700,
-            settings: {
-                slidesToScroll: 4,
-                slidesToShow: 4,
-                dots: false,
-                arrows: false,
+        ]
+    });
+
+    $('.feedback_reg').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '.feedback_prev',
+        nextArrow: '.feedback_next',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToScroll: 3,
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 500,
-            settings: {
-                slidesToScroll: 2,
-                slidesToShow: 2,
-                dots: false,
-                arrows: false,
-                scrollLock: true
-            }
-        }
-    ]
-});
+        ]
+    });
+})

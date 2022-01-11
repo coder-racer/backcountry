@@ -16,6 +16,15 @@
     }
   }
 }
+
+.bg-3{
+  background-image: url("../img/bg3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
 .bg-2{
   background-image: url("../img/bg2.png");
   background-repeat: no-repeat;
@@ -52,13 +61,55 @@
         font-size: 18px;
         line-height: 22px;
       }
-      a{
+    }
+  }
+}
+
+.catalog-item{
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+
+  .item{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    span{
+      top: -5%;
+      left: 2%;
+      z-index: 0;
+      position: absolute;
+      border-radius: 50%;
+      width: 233px;
+      height: 233px;
+      background: rgba(66, 68, 90, 0.1);
+    }
+    img{
+      z-index: 1;
+    }
+    .text{
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 1;
+      width: 286px;
+      h1{
+        color: #42445A;
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+      }
+      p{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
         font-size: 18px;
         line-height: 22px;
-        color: $pussy-girl;
+        color: #000000;
       }
     }
   }
@@ -69,10 +120,7 @@
   font-weight: 800;
   font-size: 36px;
   line-height: 44px;
-  /* identical to box height */
-
   text-align: center;
   text-transform: uppercase;
-
   color: #42445A;
 }

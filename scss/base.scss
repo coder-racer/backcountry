@@ -1,12 +1,17 @@
 $pussy-girl: #22B2EA;
 
 * {
+  outline:none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
+}
+
+.relative {
+  position: relative;
 }
 
 .container {
@@ -20,6 +25,19 @@ $pussy-girl: #22B2EA;
   max-width: 1400px;
 }
 
+.padding-100 {
+  padding: 100px 0;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: $pussy-girl;
+}
+
 .background-gl {
   z-index: -1;
   top: 0;
@@ -30,7 +48,8 @@ $pussy-girl: #22B2EA;
   width: 100%;
   height: 1495px;
 }
-.path{
+
+.path {
   position: absolute;
   overflow-x: hidden;
   width: 100%;
