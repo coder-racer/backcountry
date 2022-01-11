@@ -27,7 +27,7 @@
   padding: 100px 0;
 }
 
-a {
+.primary-link {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -58,126 +58,108 @@ a {
   src: url("../fonts/Montserrat-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-BoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-BlackItalic.woff2") format("woff2"), url("../fonts/Montserrat-BlackItalic.woff") format("woff");
   font-weight: 900;
   font-style: italic;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-LightItalic.woff2") format("woff2"), url("../fonts/Montserrat-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Italic.woff2") format("woff2"), url("../fonts/Montserrat-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-MediumItalic.woff2") format("woff2"), url("../fonts/Montserrat-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLightItalic.woff") format("woff");
   font-weight: 200;
   font-style: italic;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
-  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-ThinItalic.woff2") format("woff2"), url("../fonts/Montserrat-ThinItalic.woff") format("woff");
   font-weight: 100;
   font-style: italic;
-  font-display: swap;
 }
 .icon-search {
   background: url("../img/icon/search.png");
@@ -215,7 +197,7 @@ header .header-up .search {
 header .main-menu {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: white;
@@ -290,9 +272,10 @@ header .main-menu a {
   text-shadow: 0 0 20px black;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 48px;
   line-height: 55px;
+  text-transform: uppercase;
 }
 .banner .text-button a {
   font-family: "Montserrat", sans-serif;
@@ -400,7 +383,12 @@ header .main-menu a {
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
-  width: 286px;
+  width: 296px;
+}
+.catalog-item .item .text .text_box {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
 }
 .catalog-item .item .text h1 {
   color: #42445A;
@@ -422,7 +410,7 @@ header .main-menu a {
 .title {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   text-align: center;
@@ -443,6 +431,11 @@ header .main-menu a {
   display: block;
   margin: 0 auto;
 }
+.tour .slider_block {
+  margin-top: 120px;
+  margin-bottom: 113px;
+  position: relative;
+}
 .tour .arrows {
   position: absolute;
   width: 100%;
@@ -451,7 +444,7 @@ header .main-menu a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  height: 268px;
 }
 .tour .arrows .btn_custom_next,
 .tour .arrows .btn_custom_prev {
@@ -464,10 +457,10 @@ header .main-menu a {
 .tour .btn_custom_next {
   border-right: 2px solid #ACADB7;
   border-bottom: 2px solid #ACADB7;
-  transform: translateY(50%) rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .tour .slick-slide {
-  margin: 120px 0;
+  margin: 0 0;
   position: relative;
 }
 .tour .slick-slide .image-preview-block {
@@ -481,7 +474,7 @@ header .main-menu a {
 .tour .slick-slide .image-preview-block .icon-type {
   z-index: 1;
   bottom: 0;
-  right: 25%;
+  right: 22%;
   position: absolute;
   background: #42445A;
   height: 60px;
@@ -507,7 +500,7 @@ header .main-menu a {
 .tour .slick-slide .text-block p {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 24px;
   line-height: 29px;
   display: block;
@@ -520,23 +513,23 @@ header .main-menu a {
 .tour .btn_custom_prev {
   border-left: 2px solid #ACADB7;
   border-bottom: 2px solid #ACADB7;
-  transform: translateY(50%) rotate(45deg);
+  transform: rotate(45deg);
 }
 
 footer {
   background: url("../img/footer.png");
   width: 100%;
-  height: 639px;
+  height: 562px;
 }
 footer .wrap {
-  margin-top: 400px;
+  margin-top: 230px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 footer .wrap .text-col {
   max-width: 265px;
-  color: white;
+  color: #42445A;
 }
 footer .wrap .text-col h4 {
   font-family: "Montserrat", sans-serif;
@@ -544,25 +537,25 @@ footer .wrap .text-col h4 {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 footer .wrap .text-col a {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 34px;
   display: block;
-  color: white;
+  color: #42445A;
 }
 footer .wrap .form-info form .email {
-  background: rgba(196, 196, 196, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   border: none;
   padding: 6px 14px;
   width: 277px;
 }
 footer .wrap .form-info form .email::placeholder {
-  color: white;
+  color: #42445A;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -591,7 +584,7 @@ footer .wrap .form-info .contact a {
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  color: white;
+  color: #42445A;
   display: block;
 }
 footer .wrap .form-info .contact .social ul {
@@ -599,7 +592,8 @@ footer .wrap .form-info .contact .social ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  opacity: 0.6;
+  opacity: 0.7;
+  filter: brightness(0);
 }
 
 .feedback {
@@ -608,6 +602,7 @@ footer .wrap .form-info .contact .social ul {
 .feedback .slider {
   position: relative;
   margin-top: 90px;
+  margin-bottom: 120px;
 }
 .feedback .feedback_reg {
   width: 1266px;
