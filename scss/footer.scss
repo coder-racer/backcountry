@@ -30,6 +30,12 @@ footer {
         line-height: 34px;
         display: block;
         color: #42445A;
+        transition: ease 700ms;
+        &:hover{
+          background: rgba(255,255,255,0.4);
+          color: #22B2EA;
+          transition: ease-in-out 100ms;
+        }
       }
     }
 

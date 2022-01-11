@@ -12,17 +12,20 @@
       margin: 0 auto;
     }
   }
-  .slider_block{
-    margin-top: 120px;
+
+  .slider_block {
+    margin-top: 40px;
     margin-bottom: 113px;
     position: relative;
+    z-index: 1;
   }
 
   .arrows {
+    z-index: -1;
     position: absolute;
     width: 100%;
     left: 0;
-    top: 0;
+    top: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,16 +48,64 @@
   }
 
   .slick-slide {
+    z-index: 1;
+    padding: 80px 0;
     margin: 0 0;
     position: relative;
-
     .image-preview-block {
+
       position: relative;
 
       .slide-image-preview {
         width: 268px;
         height: 268px;
         border-radius: 50%;
+      }
+
+      li{
+        font-size: 20px;
+        opacity: 0;
+        height: 43px;
+        width: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #D7B5A1;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 22px);
+        left: 45%;
+        z-index: -1;
+        transform-origin: 220px;
+        transform: rotate(0);
+        transition: ease-in-out 500ms;
+        transition-delay: calc(100ms * var(--i));
+        div{
+          transform: rotate(calc(90deg / -3 * var(--i)));
+          transition: ease-in-out 500ms;
+          transition-delay: calc(100ms * var(--i));
+        }
+        a{
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22.3448px;
+          line-height: 30px;
+          color: white;
+        }
+        p{
+          left: 50%;
+          position: absolute;
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          color: #8C8C8C;
+          font-size: 12px;
+          bottom: -20px;
+          transform: translateX(-50%);
+          transition: ease-in-out 500ms;
+          transition-delay: calc(100ms * var(--i));
+        }
       }
 
       .icon-type {
@@ -69,6 +120,25 @@
         border-radius: 50%;
       }
     }
+    &:hover{
+      li {
+        opacity: 1;
+        transition: ease-in-out 500ms;
+        top: calc(50% - 22px);
+        left: -20px;
+        z-index: -1;
+        transform-origin: 210px;
+        transform: rotate(calc(90deg / 3 * var(--i)));
+        transition-delay: calc(100ms * var(--i));
+        div{
+          color: white;
+          transform: rotate(calc(90deg / -3 * var(--i)));
+          transition: ease-in-out 500ms;
+          transition-delay: calc(100ms * var(--i));
+        }
+      }
+    }
+
 
     .text-block {
       display: flex;

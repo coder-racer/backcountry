@@ -432,15 +432,17 @@ header .main-menu a {
   margin: 0 auto;
 }
 .tour .slider_block {
-  margin-top: 120px;
+  margin-top: 40px;
   margin-bottom: 113px;
   position: relative;
+  z-index: 1;
 }
 .tour .arrows {
+  z-index: -1;
   position: absolute;
   width: 100%;
   left: 0;
-  top: 0;
+  top: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -460,6 +462,8 @@ header .main-menu a {
   transform: rotate(-45deg);
 }
 .tour .slick-slide {
+  z-index: 1;
+  padding: 80px 0;
   margin: 0 0;
   position: relative;
 }
@@ -471,6 +475,51 @@ header .main-menu a {
   height: 268px;
   border-radius: 50%;
 }
+.tour .slick-slide .image-preview-block li {
+  font-size: 20px;
+  opacity: 0;
+  height: 43px;
+  width: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D7B5A1;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 22px);
+  left: 45%;
+  z-index: -1;
+  transform-origin: 220px;
+  transform: rotate(0);
+  transition: ease-in-out 500ms;
+  transition-delay: calc(100ms * var(--i));
+}
+.tour .slick-slide .image-preview-block li div {
+  transform: rotate(calc(-30deg * var(--i)));
+  transition: ease-in-out 500ms;
+  transition-delay: calc(100ms * var(--i));
+}
+.tour .slick-slide .image-preview-block li a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22.3448px;
+  line-height: 30px;
+  color: white;
+}
+.tour .slick-slide .image-preview-block li p {
+  left: 50%;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #8C8C8C;
+  font-size: 12px;
+  bottom: -20px;
+  transform: translateX(-50%);
+  transition: ease-in-out 500ms;
+  transition-delay: calc(100ms * var(--i));
+}
 .tour .slick-slide .image-preview-block .icon-type {
   z-index: 1;
   bottom: 0;
@@ -481,6 +530,22 @@ header .main-menu a {
   width: 60px;
   padding: 13px;
   border-radius: 50%;
+}
+.tour .slick-slide:hover li {
+  opacity: 1;
+  transition: ease-in-out 500ms;
+  top: calc(50% - 22px);
+  left: -20px;
+  z-index: -1;
+  transform-origin: 210px;
+  transform: rotate(calc(30deg * var(--i)));
+  transition-delay: calc(100ms * var(--i));
+}
+.tour .slick-slide:hover li div {
+  color: white;
+  transform: rotate(calc(-30deg * var(--i)));
+  transition: ease-in-out 500ms;
+  transition-delay: calc(100ms * var(--i));
 }
 .tour .slick-slide .text-block {
   display: flex;
@@ -547,6 +612,12 @@ footer .wrap .text-col a {
   line-height: 34px;
   display: block;
   color: #42445A;
+  transition: ease 700ms;
+}
+footer .wrap .text-col a:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: #22B2EA;
+  transition: ease-in-out 100ms;
 }
 footer .wrap .form-info form .email {
   background: rgba(255, 255, 255, 0.7);

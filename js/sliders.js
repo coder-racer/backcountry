@@ -2,6 +2,8 @@ $(document).ready(function () {
 
     $('.regular').slick({
         dots: false,
+        centerMode: true,
+        centerPadding: '40px',
         infinite: true,
         speed: 300,
         slidesToShow: 3,
