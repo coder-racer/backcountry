@@ -11,40 +11,44 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 </head>
 <body>
-<header class="wrap">
-    <nav class="desktop_menu">
-        <div class="header-up">
-            <div class="call">
-                <div class="contact">+7 777 777 77 77</div>
-                <div class="request-call">заказать звонок</div>
+<header class="container">
+    <div class="wrap">
+        <nav class="desktop_menu ">
+            <div class="header-up">
+                <div class="call">
+                    <div class="contact">+7 777 777 77 77</div>
+                    <div class="request-call">заказать звонок</div>
+                </div>
+                <div class="search">
+                    <div class="icon-search"></div>
+                </div>
             </div>
-            <div class="search">
-                <div class="icon-search"></div>
+            <div class="menu-item" hidden>
+                <a href="#">Отчеты</a>
+                <a href="#">item2</a>
+                <a href="#">item3</a>
+                <a href="#">item4</a>
+                <a href="#">item5</a>
+                <a href="#">item6</a>
             </div>
-        </div>
-        <div class="menu-item" hidden>
-            <a href="#">Отчеты</a>
-            <a href="#">item2</a>
-            <a href="#">item3</a>
-            <a href="#">item4</a>
-            <a href="#">item5</a>
-            <a href="#">item6</a>
-        </div>
-        <div class="main-menu">
-            <img class="logo" src="img/logo.png" alt="logo"/>
-        </div>
-    </nav>
+            <div class="main-menu">
+                <img class="logo" src="img/logo.png" alt="logo"/>
+            </div>
+        </nav>
+    </div>
     <nav class="mobile_menu_header">
-        <div class="burger">
+        <div onclick="burger_add()" class="burger">
+            <div class="icon_burger"></div>
         </div>
         <div class="logo">
+            <img class="logo" src="img/logo.png" alt="logo"/>
         </div>
         <div class="search">
             <div class="icon-search"></div>
         </div>
     </nav>
-    <div class="mobile_menu">
-        <div class="back">
+    <div class="mobile_menu mobile_menu_hidden">
+        <div onclick="burger_rem()" class="back">
             <div class="icon_back"></div>
         </div>
         <ul>
@@ -65,9 +69,9 @@
             <li><a href="">Отчеты</a></li>
             <li><a href="">Статьи</a></li>
         </ul>
-        <div class="phone">
+        <div class="phone center-center">
             <div class="icon_phone"></div>
-            <a href="">Заказать звонок</a>
+            <a class="buy_phone" href="">Заказать звонок</a>
         </div>
     </div>
 </header>
@@ -505,6 +509,7 @@
     </div>
 </footer>
 
+<script type="text/javascript" src="js/burger.js"></script>
 <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script src="js/sliders.js"></script>
